@@ -17,8 +17,8 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 app.get('/', (req, res) => {
-    console.log(`hello world console Commit 1`)
-    res.send('Hello World New Commit 1!')
+    console.log(`hello world console Commit 2`)
+    res.send('Hello World New Commit 2!')
 })
   
 
