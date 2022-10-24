@@ -1,14 +1,13 @@
-import express, { json, urlencoded } from 'express';
-import http from 'http';
-import https from 'https';
-
+const express = require('express');
+const http = require('http');
+const https = require('https')
 
 const app = express();
 const port = normalizePort(process.env.PORT);
 const PROTOCOL = port == 443 ? https : http;
 
-app.use(json());
-app.use(urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.set('port', port);
 
 
